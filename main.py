@@ -2,9 +2,11 @@ import streamlit as st
 import pandas as pd
 from Gplaces import Gplaces
 
-
+"""
 with open('./key', 'r') as file:
     API_KEY = file.read()
+"""
+API_KEY = st.secrets("API_KEY")
 
 def main():
     st.title("Business Competition Assessment")
