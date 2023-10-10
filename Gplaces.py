@@ -60,9 +60,9 @@ class Gplaces:
         return results["results"]
     
     def get_detailed_info(self, place_id):
-            result = self.gmaps.place(place_id=place_id)
+        result = self.gmaps.place(place_id=place_id)
 
-            if result['status'] != "OK":
-                return None
+        if result['status'] != "OK":
+            return None
             
-            return result['result']
+        return result['result']
